@@ -1,14 +1,19 @@
 import "./App.css";
 import LandingNav from "./components/LandingNav";
-import Aurora from "./components/ui/Aurora";
-import LightRays from "./components/ui/LightRays";
+import Forms from "./pages/Forms";
+import Portfolio from "./pages/Portfolio";
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
-  return (
-    <div className="text-white">
-      <LandingNav />
-    </div>
-  );
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<LandingNav />} />
+				<Route path="/form" element={<Forms />} />
+				<Route path="/portfolio" element={<Portfolio />} />
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
 export default App;

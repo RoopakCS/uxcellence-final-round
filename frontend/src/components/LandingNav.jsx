@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import LightRays from "./ui/LightRays";
 
 function LandingNav() {
@@ -54,21 +55,21 @@ function LandingNav() {
         </nav>
         <div className="flex flex-col items-center justify-center top-48 absolute ">
           <div className="text-white flex w-[80%] text-center text-7xl font-bold">
-            <h1>Create a Portfolio website that stands out</h1>
+            <h1 className="pl-16">Create a Portfolio website that stands out</h1>
           </div>
           <div className="text-white mt-10 text-center flex w-[100%] justify-center items-center text-lg font-bold">
-            <h2 className="w-[50%] text-center">
+            <h2 className="w-[50%] text-center pl-16">
               Showcase your work and attract clients. Build and promote your
               online portfolio using powerful AI, design and business tools
             </h2>
           </div>
-          <div className="pt-10">
-            <a
-              href="#"
+          <div className="pt-16 pl-3">
+            <Link
+              to="/form"
               className="bg-cyan-500 rounded-xl hover:bg-cyan-400 font-bold px-10 py-4 text-white transition w-full text-2xl"
             >
               Get Started
-            </a>
+            </Link>
           </div>
           <div className="w-full mt-12 flex items-center px-40 justify-center tracking-wider">
             <div className="text-5xl font-bold">Start Now!</div>
@@ -78,6 +79,7 @@ function LandingNav() {
               </button>
             </div> */}
           </div>
+          
         </div>
       </div>
     </>
